@@ -14,35 +14,57 @@
 
 
 #input function
-#// name = input("What's your name?  ")     
-#// age = int(input("How old are you?  "))
-#// print (f"Hello {name}, welcome to Python programming!") #* use a (F) string to include a variable in a string
-#// 
+# name = input("What's your name?  ")     
+# age = int(input("How old are you?  "))
+# print (f"Hello {name}, welcome to Python programming!") #* use a (F) string to include a variable in a string
+# 
 
 #! EXERCISE 1: CALCULCULATE THE AREA OF A RECTANGLE
-
-#// Length = float(input("Enter the length of the rectangle: "))
-#//Width = float(input("Enter the width of the rectangle: "))
-#//Area = Length * Width
-#//print (f"The area of the rectangle is: {Area} cm²")
+# Length = float(input("Enter the length of the rectangle: "))
+#Width = float(input("Enter the width of the rectangle: "))
+#Area = Length * Width
+#print (f"The area of the rectangle is: {Area} cm²")
 
 #! EXERCISE 2: SHOPPING CART
+#Item = input("What item are you buying?  ")
+#price = float(input("What is the price of the item? £ "))
+#quantity = int(input("How many items are you buying?  "))
+#Total = price * quantity
 
-#//Item = input("What item are you buying?  ")
-#//price = float(input("What is the price of the item? £ "))
-#//quantity = int(input("How many items are you buying?  "))
-#//Total = price * quantity
-
-#//print (f"You are purchasing {quantity} {Item}(s)\nThe Total cost: £ {Total:.2f}")
+#print (f"You are purchasing {quantity} {Item}(s)\nThe Total cost: £ {Total:.2f}")
 
 
-#! MADLIBS GAME
-print ("Welcome to the Madlibs game!")
-name = input("Enter a name:")
-place = input("Enter the name of a place:")
-adjective = input("Enter an adjective:")
-noun = input("Enter a noun:(place, person, animal, or thing): ")
-name2 = input("Enter another name:")
+#!IF STATEMENTS
+#*only operates if the condition is true, if not it will skip the code block and move on to the next line of code 
 
-print (f"One day, {name} went to {place}.\nIt was a very {adjective} day.\nSuddenly, a {noun} appeared and scared {name2}.")
+#age = int(input ("Enter your age: "))12
+#if age >= 18:
+    #print ("You are old enough")
+#else:
+   #print ("You aren't old enough to open an account")
 
+#! Logical Operators:
+# and, or, not, THESE ARE USED TO COMBINE CONDITIONAL STATEMENTS
+# AND - both conditions must be true
+# OR - at least one condition must be true
+#NOT - reverses the result, returns false if the result is true
+
+#! conditional expressions:
+#*conditional expressions are shortened code that uses the 
+#*if else statement to return a value based on a condition
+#age = int(input ("Enter your age: "))
+##status = "Adult" if age >= 18 else "You is a minor"
+#if status == "Adult":
+    #print (f"You are a {status}")
+#else:
+    #print (f"I hate to tell you, but {status}")
+
+#! exercise 3: NAME LENGTH 
+#name = input ("What your name? : ")
+
+#length =len(name)
+#find = name.find("a").upper()
+#if name == "":
+#print ("You didn't enter a name")
+#else:
+    #*print (f"Hey {name}, your name has {length} characters in it")
